@@ -16,9 +16,9 @@ void main()
     scanf("%d",&key);
     first = 0;
     last = size-1;
-    middle = (first+last)/2;
-    while(first<=last)
+     while(first<=last)
     {
+	 middle = (first+last)/2;
         if(list[middle]<key)
         {
             first=middle+1;
@@ -30,7 +30,7 @@ void main()
         }
         else
         {
-            last=middle-1;
+            
             middle=(first+last)/2;
         }
     }
